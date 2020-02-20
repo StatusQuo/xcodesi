@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>libview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import UIKit
+
+class View: UIView {
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+
+        setViews()
+        layoutViews()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+
+        setViews()
+        layoutViews()
+    }
+
+    /// Set your view and its subviews here.
+    func setViews() {
+        backgroundColor = .white
+    }
+
+    /// Layout your subviews here.
+    func layoutViews() {}
+
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A2095F67-F21C-4031-A206-309B8502D2C2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>libview</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

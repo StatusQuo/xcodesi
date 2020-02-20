@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>newTest</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import RxRelay
+import RxSwift
+import RxTest
+@testable import satellite
+import XCTest
+
+class InboxModelTests: XCTestCase {
+    private var scheduler: TestScheduler!
+
+    override func setUp() {
+        scheduler = TestScheduler(initialClock: 0)
+    }
+
+    func test_modelcorrectly_matching() {
+        let disposeBag = DisposeBag()
+        scheduler.createHotObservable([.next(300, true), .next(400, false), .next(500, true)])
+            .bind(to: viewModel.toggleMuteButton)
+            .disposed(by: disposeBag)
+        let result = scheduler.start { self.viewModel.muteButtonSelectedState.asObservable() }
+
+        let expected = Recorded.events(.next(300, true), .next(400, false), .next(500, true))
+        XCTAssertEqual(expected, result.events)
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FA884F2C-01C2-4512-8D40-F017A94D56F6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>newTest</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
