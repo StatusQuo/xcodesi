@@ -36,7 +36,7 @@ class InboxModelTests: XCTestCase {
 }
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FA884F2C-01C2-4512-8D40-F017A94D56F6</string>
+	<string>rx-test</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>

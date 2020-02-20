@@ -16,7 +16,7 @@
         return button
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>878A9EC5-0813-437C-8424-553E992E7479</string>
+	<string>view-uibutton</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>

@@ -13,7 +13,7 @@
 
         }).disposed(by: disposeBag)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FB134BAF-6F8A-4A42-8C94-EF9662079ABB</string>
+	<string>rx-sub</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
